@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condisões</title>
+    <link rel="shortcut icon" href="../img/Curso em video.ico" type="image/x-icon">
+    <style>
+        body {
+            font: normal 1.1em Arial;
+            text-align: center;
+        }
+
+        p.pi {
+            display: inline;
+        }
+
+        #botao {
+            padding: 4px 9px;
+            margin-left: 5px;
+            background-color: lightgray;
+            border: solid none black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sistemas de Multas</h1>
+    <p class="pi">Velocidade do carro: </p><input type="number" name="txtvel" id="txtvel"> <p class="pi"><strong style="font-size: 1.3em;">Km/h</strong></p>
+    <input type="button" value="Verificar" id="botao" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+
+        function calcular() {
+            var txtv = window.document.querySelector("input#txtvel")
+            var res = window.document.querySelector("div#res")
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p style="font-size: 1.1em">Sua velocidade é de <strong>${vel} km/h</strong></p>`
+            if (vel > 60) {
+                res.innerHTML += `<p>Você ultrapassou o limite de velocidade. <strong>Pague a multa POBRE!</strong></p>`
+            }else {
+                res.innerHTML += `<p>Você está dentro do limite de velocidade.</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+
+    </script>
+
+</body>
+</html>

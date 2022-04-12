@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="shortcut icon" href="../img/Curso em video.ico" type="image/x-icon">
+    <link rel="stylesheet" href="ex002.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <main>
+        <div>
+            <p>ano de nascimento: 
+                <input type="number" name="nas" id="nas" min="0">
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" class="mar" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" class="mar">
+                <label for="fem">Feminino</label>
+            </p>
+            <input type="button" value="Verificar" id="bt" onclick="clicar()">
+        </div>
+        <div id="res">
+            <p>Preencha os dados a cima para ver o resultado!</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="ex002.js"></script>
+
+</body>
+</html>

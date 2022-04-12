@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda vez aqui...</title>
+    <link rel="shortcut icon" href="../img/Curso em video.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #6062A0;
+            margin: 0px;
+        }
+
+        h1 {
+            padding: 15px;
+            text-align: center;
+            background-color: #875FAD;
+            margin: 0px;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Sem conteúdo</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quia, assumenda quod reiciendis enim officia dolores id cumque voluptas accusantium corrupti nam sequi molestiae maxime, corporis porro accusamus ad eum.
+    </p>
+    <script>
+
+        var n1 = Number(window.prompt("Digite um número"))
+        var n2 = Number(window.prompt("Digite outro número"))
+        var soma = n1 + n2
+        var din = soma.toLocaleString("pt-BR", {style: "currency", currency: "BRL"})
+        window.alert(`A soma de ${n1} e ${n2} é ${soma.toFixed(4).replace(".", ",")}`)
+        window.alert(`Em dinheiro é ${din}`)
+        /* window.alert("A soma de " + n1 + " mais " + n2 + " é " + soma.toString())
+        var nome = window.prompt("Qual é seu nome?")
+        window.alert("É um grande prazer em te conhecer, " + nome) concatenação! */
+
+    </script>
+
+</body>
+</html>
